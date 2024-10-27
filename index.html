@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Basic Interactive Resume Builder</h1>
+    <form id="resumeForm">
+
+        <fieldset>
+            <legend><h2>Personal Info</h2></legend>     
+            <div class="section">
+                <label>Full name: <input type="text" name="full name" required></label>
+            </div>
+
+            <div class="section">
+                <label>Email: <input type="email" name="Email" required></label>
+            </div>
+
+            <div class="section">
+                <label>Phone: <input type="tel" name="number" required></label>
+            </div>
+            <div class="section">
+                <label>Highest qualification
+                    <select name="Education">
+                        <option>below Matric</option>
+                        <option>Matric</option>
+                        <option>Inter</option>
+                        <option>Graduation</option>
+                        <option>Masters</option>
+                    </select>
+                </label>
+            </div>
+            <div class="section">
+                <label>Skills: <input type="text" required></label>
+            </div>
+            <div class="section">
+                <label>Experience: <textarea name="exp"></textarea></label>
+            
+            <div>
+                <input type="submit" onclick="generateResume()" value="Generate Resume">
+            </div>
+        </fieldset>
+
+    </form>
+
+    <!-- Resume Preview Section -->
+    <div id="resumePreview" style="display:none;">
+        <h2>Resume Preview</h2>
+        <div id="resumeContent"></div>
+        <button onclick="downloadPDF()">Download as PDF</button>
+    </div>
+</body>
+</html>
