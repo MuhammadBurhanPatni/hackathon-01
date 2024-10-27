@@ -7,7 +7,7 @@ function generateResume() {
     const email = document.querySelector('input[name="Email"]').value;
     const phone = document.querySelector('input[name="number"]').value;
     const education = document.querySelector('select[name="Education"]').value;
-    const skills = document.querySelector('input[type="text"]').value;
+    const skills = document.querySelector('input[name="Skills"]').value;
     const experience = document.querySelector('textarea[name="exp"]').value;
 
     // Create resume content
