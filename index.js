@@ -10,7 +10,6 @@ function generateResume() {
     const skills = document.querySelector('input[name="Skills"]').value;
     const experience = document.querySelector('textarea[name="exp"]').value;
 
-    // Create resume content
     const resumeContent = `
         <p><strong>Name:</strong> ${fullName}</p>
         <p><strong>Email:</strong> ${email}</p>
@@ -20,12 +19,12 @@ function generateResume() {
         <p><strong>Experience:</strong> ${experience}</p>
     `;
 
-    // Show resume content in preview
+   
     document.getElementById('resumeContent').innerHTML = resumeContent;
     document.getElementById('resumePreview').style.display = 'block';
 }
 
 function downloadPDF() {
-    // Placeholder for PDF download functionality
+    
     alert('Download PDF functionality is not implemented yet.');
 }
